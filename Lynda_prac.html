@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a Lynda Tutorials.</title>
+</head>
+<body>
+	<h1 id="head">This is a Header Section</h1>
+	<p id="para">This is a para section section of this containt.</p>
+
+	<ul id="list">
+		<li><a href="#"> Home </a> </li>
+		<li><a href="#"> About us </a></li>
+		<li><a href="#"> contact </a></li>
+		<li><a href="#"> contact </a></li>
+		<li><a href="#"> contact </a></li>
+	</ul>
+
+	<ol id="order_list">
+		<li><a href="#"> Home </a> </li>
+		<li><a href="#"> About us </a></li>
+		<li><a href="#"> contact_one </a></li>
+		<li><a href="#"> contact_two </a></li>
+		<li><a href="#"> contact_three </a></li>
+	</ol>
+
+
+	<div id="trivia"></div>
+
+
+	<script type="text/javascript">
+		// Dynamic h1 and p element add with trivia id
+	var addNewHead = document.createElement('h1');
+		addNewHead.innerHTML = "This is a Dynamic Header";
+
+	var addNewPara = document.createElement('p');
+		addNewPara.innerHTML = "This is a Dynamic paragraph. This is a Dynamic paragraph.";
+
+	document.getElementById('trivia').appendChild(addNewHead);
+	document.getElementById('trivia').appendChild(addNewPara);
+
+	</script>
+
+
+
+
+		<script type="text/javascript">
+			// Create a New Dynamic Element with order_list Element.
+			
+		var order_list = document.getElementById('order_list');
+		var addNewElement = document.createElement('li');
+
+			order_list.appendChild(addNewElement);
+			addNewElement.innerHTML = "I am a new li Element.";
+		</script>
+
+
+
+
+	<script type="text/javascript">
+		
+	 	// var myId = document.getElementById('list');  // list ID add
+
+	 	// var  myLink = document.getElementsByTagName('a');   // all Anchor tag Add
+	 		// console.log(myLink.length);
+
+	 	//var myList = document.getElementsByTagName('li');  // all li add 
+
+	 	// id head attribute
+	 //	var head = document.getElementById('head');
+	 //	console.log("This is a another head section " + head.nodeType);
+	 //	console.log("This is a another head section " + head.innerHTML);
+	 //	console.log("This is a another head section " + head.childNodes.length);
+
+	</script>
+
+
+	<script type="text/javascript">
+		
+	//	var allList = document.getElementsByTagName('li'); // total li select hobe.
+			//console.log(allList.length);
+
+	//	var Separate_list = document.getElementById('order_list');
+
+	//	var allSeparateLi = Separate_list.getElementsByTagName('li').style.color = "red";
+	//	console.log(allSeparateLi);
+
+	</script>
+
+</body>
+</html>

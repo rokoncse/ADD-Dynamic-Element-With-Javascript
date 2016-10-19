@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Dynamic Create Elements</title>
+</head>
+<body>
+
+<div id="first_element"></div>
+
+
+<ul id="list_element"></ul>
+
+	
+
+	<script type="text/javascript">
+
+		// First Element Section
+		var first_element = document.getElementById('first_element');
+		
+		var addHead_element = document.createElement('h1');
+			addHead_element.innerHTML = "This is a Dynamic Header Section";
+
+		var addPara_element = document.createElement('p');
+			addPara_element.innerHTML = "This is a new Dynamic Paragraph with use in JavaScript";
+
+		document.getElementById('first_element').appendChild(addHead_element);
+		document.getElementById('first_element').appendChild(addPara_element);
+
+		// list_element section
+		var list_element = document.getElementById('list_element');
+
+		var addFirst_list = document.createElement('li');
+			addFirst_list.innerHTML = "First Dynamic List in Javascript";
+		var addSecond_list = document.createElement('li');
+			addSecond_list.innerHTML = "Second Dynamic List in JavaScript";
+		var addThird_list = document.createElement('li');
+			addThird_list.innerHTML = "Third Dynamic List in JavaScript";
+		var addFour_list = document.createElement('li');
+			addFour_list.innerHTML = "Fourth Dynamic List in JavaScript."
+
+		document.getElementById('list_element').appendChild(addFirst_list);
+		document.getElementById('list_element').appendChild(addSecond_list);
+		document.getElementById('list_element').appendChild(addThird_list);
+		document.getElementById('list_element').appendChild(addFour_list);
+
+	</script>
+
+</body>
+</html>
